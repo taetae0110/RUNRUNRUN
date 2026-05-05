@@ -1,11 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>런런런 계정 및 데이터 삭제 요청</title>
+    <meta
+      name="description"
+      content="런런런 앱 계정 및 관련 데이터 삭제 요청 방법, 삭제되는 데이터, 보관되는 데이터와 보관 기간 안내"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #05070a;
+        --panel: #111923;
+        --line: #21303d;
+        --text: #f7fafc;
+        --muted: #a7b3bf;
+        --acid: #b7ff2a;
+        --danger: #ff5d73;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: radial-gradient(circle at 20% 0%, rgba(183, 255, 42, 0.12), transparent 28%),
+          linear-gradient(180deg, #05070a, #07120f 42%, #05070a);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid rgba(183, 255, 42, 0.45);
+        border-radius: 999px;
+        padding: 6px 12px;
+        background: rgba(183, 255, 42, 0.08);
+        color: var(--acid);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      h1 {
+        margin: 18px 0 12px;
+        font-size: clamp(32px, 6vw, 56px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--acid);
+        font-weight: 800;
+      }
+
+      section {
+        margin-top: 22px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(17, 25, 35, 0.88);
+        padding: 22px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 13px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--text);
+        font-size: 14px;
+      }
+
+      td {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .notice {
+        border-color: rgba(255, 93, 115, 0.38);
+        background: rgba(255, 93, 115, 0.08);
+      }
+
+      .notice strong {
+        color: var(--danger);
+      }
+
+      footer {
+        margin-top: 28px;
+        color: #71808d;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="badge">런런런 계정 삭제</span>
+      <h1>계정 및 관련 데이터 삭제 요청</h1>
+      <p>
+        이 페이지는 모바일 앱 <strong>런런런</strong> 사용자가 계정과 관련 데이터를 삭제 요청하는 방법을 안내합니다.
+        런런런은 현실 기반 러닝, 지도 기반 영토 점령, 친구/크루 경쟁 기능을 제공하는 앱입니다.
+      </p>
+
+      <section>
+        <h2>앱에서 계정 삭제하기</h2>
+        <ol>
+          <li>런런런 앱을 실행합니다.</li>
+          <li>로그인 후 하단 탭에서 <strong>프로필</strong> 또는 <strong>설정</strong>으로 이동합니다.</li>
+          <li><strong>계정</strong> 카테고리를 엽니다.</li>
+          <li><strong>탈퇴</strong> 또는 <strong>계정 삭제</strong>를 선택합니다.</li>
+          <li>안내 내용을 확인한 뒤 삭제 요청을 완료합니다.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>웹에서 계정 삭제 요청하기</h2>
+        <p>
+          앱에 로그인할 수 없거나 앱을 다시 설치하지 않고 삭제를 요청하려면 아래 이메일로 요청해 주세요.
+        </p>
+        <p>
+          <a href="mailto:privacy@runrunrun.app?subject=%EB%9F%B0%EB%9F%B0%EB%9F%B0%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD"
+            >privacy@runrunrun.app</a
+          >
+        </p>
+        <p>요청 시 본인 확인을 위해 런런런 계정 이메일과 닉네임을 함께 적어 주세요.</p>
+      </section>
+
+      <section>
+        <h2>삭제되는 데이터</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>데이터 유형</th>
+              <th>처리 방식</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>계정 정보</td>
+              <td>이메일, 닉네임, 프로필 이미지, 소셜 로그인 연결 정보가 삭제됩니다.</td>
+            </tr>
+            <tr>
+              <td>러닝 기록</td>
+              <td>러닝 세션, GPS 경로, 거리, 시간, 페이스, 칼로리, 점령 기록이 삭제되거나 개인 식별이 불가능하게 처리됩니다.</td>
+            </tr>
+            <tr>
+              <td>소셜 데이터</td>
+              <td>친구 관계, 크루 가입 정보, 초대/가입 요청, 채팅 메시지, 알림 기록이 삭제됩니다.</td>
+            </tr>
+            <tr>
+              <td>게임 데이터</td>
+              <td>XP, 레벨, 배지, 랭킹, 점령 점수, 방어력 데이터가 삭제되거나 익명화됩니다.</td>
+            </tr>
+            <tr>
+              <td>기기 데이터</td>
+              <td>푸시 토큰, 앱 버전, 기기 정보, 워치/건강 연동 데이터가 삭제됩니다.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="notice">
+        <h2>일부 보관될 수 있는 데이터</h2>
+        <p>
+          <strong>법령 준수, 보안, 부정 이용 방지, 분쟁 대응</strong>을 위해 필요한 최소 정보는 아래 기간 동안
+          보관될 수 있습니다.
+        </p>
+        <ul>
+          <li>고객센터 문의 기록: 처리 완료 후 최대 3년</li>
+          <li>부정 이용 탐지 및 보안 로그: 생성일로부터 최대 1년</li>
+          <li>접속 및 오류 로그: 생성일로부터 최대 3개월</li>
+          <li>관계 법령상 보관 의무가 있는 정보: 해당 법령에서 정한 기간</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>처리 기간</h2>
+        <p>
+          계정 삭제 요청은 본인 확인 후 최대 30일 이내 처리됩니다. 처리 결과는 요청에 사용한 이메일로 안내됩니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>문의</h2>
+        <p>
+          개인정보 및 계정 삭제 관련 문의:
+          <a href="mailto:privacy@runrunrun.app">privacy@runrunrun.app</a>
+        </p>
+        <p>운영자: 런런런 운영팀</p>
+      </section>
+
+      <footer>
+        시행일: 2026년 5월 5일<br />
+        이 페이지는 Google Play 계정 삭제 요구사항에 따라 런런런 앱 및 개발자 이름, 삭제 요청 방법, 삭제/보관 데이터와 보관 기간을 안내합니다.
+      </footer>
+    </main>
+  </body>
 </html>
